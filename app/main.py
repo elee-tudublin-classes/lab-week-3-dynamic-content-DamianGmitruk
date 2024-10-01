@@ -9,7 +9,7 @@ from contextlib import asynccontextmanager
 import json
 from starlette.config import Config
 
-config = Config(".env.example")
+config = Config(".env")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
